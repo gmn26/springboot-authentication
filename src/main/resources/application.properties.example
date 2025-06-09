@@ -1,0 +1,20 @@
+spring.application.name=springboot_authentication
+spring.datasource.url=jdbc:postgresql://localhost:port/db_name
+spring.datasource.username=postgres // postgres db username
+spring.datasource.password=password // postgres db password
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update
+
+springdoc.api-docs.enabled=true
+springdoc.swagger-ui.enabled=true
+springdoc.swagger-ui.path=/swagger-ui.html
+
+jwt.secret=xxxxxxxxx
+jwt.expiration=3600000 //in milisecond
+
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=example@gmail.com
+spring.mail.password=google-app-password // generated via google
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
