@@ -24,8 +24,6 @@ public class AuthController {
 
     private final AuthServiceImpl authService;
 
-    private final OTPService otpService;
-
     private final EmailVerificationService emailVerificationService;
 
     @PostMapping("/login")
@@ -82,6 +80,11 @@ public class AuthController {
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+//    @PostMapping("/resend-otp")
+//    public ResponseEntity<WebResponse<String>> resendOTP(@RequestBody VerifyRequestDto verifyRequestDto) {
+//
+//    }
 
     @PostMapping("/register")
     public ResponseEntity<WebResponse<LoginResponse>> register(@RequestBody RegisterRequestDto registerRequestDto) {
